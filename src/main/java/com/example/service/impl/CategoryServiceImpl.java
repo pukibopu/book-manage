@@ -1,7 +1,7 @@
 package com.example.service.impl;
 
 import com.example.entity.Category;
-import com.example.mapper.MapperTest;
+import com.example.mapper.CategoryMapper;
 import com.example.service.CategoryService;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class CategoryServiceImpl implements CategoryService {
     @Resource
-    MapperTest mapper;
+    CategoryMapper mapper;
     @Override
     public List<Category> getCategory() {
         return mapper.selectList(null);
