@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/book
+    url: jdbc:mysql://localhost:3306/lib
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
+    password: root
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
