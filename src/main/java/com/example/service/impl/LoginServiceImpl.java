@@ -1,7 +1,7 @@
 package com.example.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.example.entity.LoginDTO;
+import com.example.DTO.LoginDTO;
 import com.example.entity.Reader;
 import com.example.mapper.ReaderMapper;
 import com.example.result.Result;

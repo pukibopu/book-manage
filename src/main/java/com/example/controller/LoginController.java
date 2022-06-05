@@ -1,10 +1,9 @@
 package com.example.controller;
 
-import com.example.entity.LoginDTO;
+import com.example.DTO.LoginDTO;
 import com.example.result.Result;
 import com.example.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
