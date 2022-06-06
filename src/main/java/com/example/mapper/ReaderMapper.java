@@ -2,6 +2,7 @@ package com.example.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.entity.Reader;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
@@ -12,4 +13,6 @@ public interface ReaderMapper extends BaseMapper<Reader> {
     int updateUserInfo(@Param("name") String name,@Param("grade") String grade,@Param("pwd") String newPwd,@Param("id") int id,@Param("email") String email);
     @Update("update reader set deposit=deposit+#{money} where id=#{id}")
     int updateDeposit(@Param("money") double money,@Param("id") int id);
+    @Insert("insert into reader(name,grade,email,deposit,password) values(#{name},#{grade},#{email},30.0,#{password})")
+    int insertInfo(@Param("name") String name,@Param("grade") String grade,@Param("email") String email,@Param("password") String password);
 }
